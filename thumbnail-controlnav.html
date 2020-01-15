@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+  <!-- Demo CSS -->
+
+	<link rel="stylesheet" href="/wp-content/themes/kallyas/kallyas/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+
+
+</head>
+<body class="loading">
+
+
+<div id="main"><section class="slider">
+<div class="flexslider">
+<ul class="slides">
+	<li data-thumb="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_cheesecake_brownie.jpg"><img src="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_cheesecake_brownie.jpg" alt="" /></li>
+	<li data-thumb="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_lemon.jpg"><img src="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_lemon.jpg" alt="" /></li>
+	<li data-thumb="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_donut.jpg"><img src="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_donut.jpg" alt="" /></li>
+	<li data-thumb="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_caramel.jpg"><img src="/wp-content/themes/kallyas/kallyas/images/images/kitchen_adventurer_caramel.jpg" alt="" /></li>
+</ul>
+</div>
+      </section>
+ 
+
+ <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <!-- FlexSlider -->
+  <script defer src="/wp-content/themes/kallyas/kallyas/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
